@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #942f2f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(153, 121, 121, 0.5);
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section.active {
+    display: block;
+}
+
+.section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(133, 132, 185, 0.8);
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 80px); 
+    box-sizing: border-box;
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#home .container {
+    margin-top: 50px; 
+}
+#services .container{
+    margin-top: 50px;
+}
+#contact .container{
+    margin-top: 50px;
+}
+#developer .container{
+    margin-top: 50px;
+}
+
+.mbc-logo{
+    width: 500px;
+    top: 50%;
+    left: 50%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.932);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+

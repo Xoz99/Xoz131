@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBC Laboratory</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('services')">Our Services</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('developer')">Developer</a></li>
+        </ul>
+        <img src="mbc-removebg-preview.png" alt="MBC Lab Logo" class="nav-logo">
+    </nav>
+
+    <section id="home" class="section active">
+        <video autoplay muted loop>
+            <source src="baground.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1>Welcome to MBC Laboratory</h1>
+            <img src="mbc-removebg-preview.png" class="mbc-logo">
+            <p><h3> Lab adalah sebuah Pusat Riset teknologi dan sebuah Perusahaan yang
+                bergerak di bidang Konsultan Cybersecurity, Big Data, Game Technology , dan
+                Geographic Information System. Untuk meningkatkan kehadiran digital dan
+                memberikan informasi yang jelas mengenai layanan yang ditawarkan, MBC Lab
+                memutuskan untuk membuat sebuah LANDING PAGE.</h3></p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <video autoplay muted loop>
+            <source src="baground.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <img src="cyber.jpg" alt="Cybersecurity">
+                    <h3>Cybersecurity</h3>
+                    <p>Cybersecurity adalah disiplin yang berfokus pada perlindungan sistem komputer, jaringan, perangkat lunak, dan data dari serangan online.</p>
+                </div>
+                <div class="service-item">
+                    <img src="bigdata.jpg" alt="Big Data">
+                    <h3>Big Data</h3>
+                    <p>Big data merujuk pada volume besar data yang dianalisis untuk mendukung pengambilan keputusan.</p>
+                </div>
+                <div class="service-item">
+                    <img src="game.jpg" alt="Game Technology">
+                    <h3>Game Technology</h3>
+                    <p>Game teknologi adalah penggunaan teknologi canggih dalam industri permainan video.</p>
+                </div>
+                <div class="service-item">
+                    <img src="gis.jpg" alt="GIS">
+                    <h3>Geographical Information System</h3>
+                    <p>Sistem Informasi Geografis (SIG) mengintegrasikan data dari berbagai sumber untuk analisis spasial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <video autoplay muted loop>
+            <source src="baground.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="center">
+                <div class="service-item">
+                    <div class="forEach">
+            <h2>Contact Us</h2>
+            <p>Address: Telkom university</p>
+            <p>Phone: +6281381445915</p>
+            <p>Email: andrianadiwahyono01@gmail.com</p>
+                        <a href="https://www.instagram.com/andrian.adi_w?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <img src="insta-removebg-preview.png" alt="Instagram Logo" style="width: 50px; height: 50px;">
+                        </a>
+                        <a href="https://wa.me/6281381445915?text=hallo%20kak%20andrian">
+                            <img src="WhatsApp_Image_2024-07-04_at_14.08.42_1653eb5c-removebg-preview.png" alt="Whatsapp Logo" style="width: 50px; height: 50px;">
+                        </a>
+                        <a href="https://github.com/Xoz99/Xoz99.git">
+                            <img src="github-removebg-preview.png" alt="Github Logo" style="width: 50px; height: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="developer" class="section">
+        <video autoplay muted loop>
+            <source src="baground.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h2>Developer</h2>
+            <p>This website was developed by Andrian adi wahyono.</p>
+            <p>Telecommunication Engineering</p>
+            <p>Class of 2023</p>
+            <img src="adnrian.jpg" class="service-item">
+        </div>
+    </section>
+
+    <footer>
+        <div class="nav">
+            <p>&copy; 2024 MBC Laboratory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
